@@ -1,14 +1,3 @@
-/**
- * Using ajax, download some data from a remote server and log it to the console
- */
-
-
-
-
-
-
-
-
 var map = L.map('map', {
   center: [39.9522, -75.1639],
   zoom: 2
@@ -20,6 +9,3 @@ var Stamen_TonerLite = L.tileLayer('http://stamen-tiles-{s}.a.ssl.fastly.net/ton
   maxZoom: 20,
   ext: 'png'
 }).addTo(map);
-
-// L.terminator().addTo(map)
-

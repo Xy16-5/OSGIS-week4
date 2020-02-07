@@ -1,3 +1,30 @@
+// =====================================================
+// Performant, recursive fun with underscore.js
+// =====================================================
+
+// The fibonnacci sequence (SLOW)
+var fib = function(n) {
+  if (n < 2) {
+    return n;
+  } else {
+    return fib(n - 1) + fib(n - 2);
+  }
+}
+
+// The fibonnacci sequence (memoized means it saves results!)
+var fibonacci = _.memoize(function(n) {
+  if (n < 2) {
+    return n;
+  } else {
+    return fibonacci(n - 1) + fibonacci(n - 2);
+  }
+});
+
+
+// =====================================================
+// Examples of programming with/in time
+// =====================================================
+
 // This function will run the provided operation on the provided
 //  argument after the provided delay.
 var runAfter = function(run, runArg, runDelay, delayFunc) {
@@ -18,16 +45,6 @@ var runAfter = function(run, runArg, runDelay, delayFunc) {
 // We will use this make integers into seconds for delayFunc above
 var seconds = function(x) { return x * 1000; };
 var ms = function(x) { return x; };
-
-// The fibonnacci sequence (memoized means it saves results!)
-var fibonacci = _.memoize(function(n) {
-  if (n < 2) {
-    return n;
-  } else {
-    return fibonacci(n - 1) + fibonacci(n - 2);
-  }
-});
-
 
 // Logic related to button/counter
 var addButton = $("#addButton");

@@ -124,10 +124,10 @@ console.log('Grouped by type:', query7);
 Stretch Goal:
 
 Grouping by type (query7) changed the structure of our data. Instead of an array of
-objects, we have an object that contains arrays of objects. Let's do something
-with this new data structure.
+objects (e.g. [{}, {}]), we have an object that contains arrays of objects
+(e.g. {'key1': [{}, {}], 'key2': [{}, {}]}). Let's do something this structure.
 
-Rewrite the printMenu function to receive the new structure (query7) and print
+Write a printMenu2 function to receive the new structure (query7) and print
 (console.log) a menu with headings. Running printMenu(query7) should log:
 
 Cake
@@ -138,12 +138,13 @@ Bread
 Sourdough ... $5.29
 Rye ... $5.09
 Whole Wheat ... $4.49
+
 ===================== */
 
-// printMenu(query7);
+// printMenu2(query7);
 
 /* =====================
-Stretch Goal:
+Stretch Goal (seriously, this is a bit tough at first!):
 
 We're writing each line of the menu with the code `food.name + " ... $" + food.price`.
 While this method technically works, it will become less manageable when the
@@ -152,5 +153,9 @@ increases). Underscore has a 'templating' system that can be used to clean up th
 rendering process.
 
 Use _.template to render the price lines of the menu (Carrot ... $3.49).
+
+Hint: Pay close attention to the example provided in documentation. Copy and paste
+it so that you can try it out for yourself. Once you think youunderstand how it
+works, give it a try.
 
 ===================== */

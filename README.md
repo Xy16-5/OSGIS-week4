@@ -6,13 +6,13 @@
 
 #### Intro & Week 3 Review
 - Lab discussion
-- Ajax and Async
+- Ajax and Async behaviors
 
 ## Lecture and Labs
 
 ##### Section 1: Underscore Review
 - More Underscore utilities
-- Underscore scavenger hunt 2
+- [Lab 1](lab/lab1/): Underscore scavenger hunt 2
 
 ##### Section 2: jQuery & Async Behavior
 - jQuery
@@ -22,14 +22,16 @@
 - Programming in time
   - Working with (future) data
   - Managing state
-- [Lab 2](lab/lab2/)
+- [Lab 2](lab/lab2/): First steps with jQuery
 
 ## Homework Assignment
 - Complete [Week 4 Lab 1 and 2](lab/) (lab 2, part 3 is a stretch goal)
-- Complete [Code Academy HTML/CSS](https://www.codecademy.com/en/tracks/web)
-  - HTML Basics
-  - Build your own webpage
-  - HTML Basics 2
-  - CSS: An Overview
-- Complete [Week 4 Assignment 1](assignment/assignment1)
+- Complete selected [Code Academy HTML](https://www.codecademy.com/learn/learn-html) sections
+  1. Elements and Structure
+  4. Semantic HTML
+- Complete selected [Code Academy CSS](https://www.codecademy.com/learn/learn-css) sections
+  1. Learn CSS: Selectors and Visual Rules
+  3. Display and Positioning
+  4. Colors
+- Complete [Week 4 Assignment](assignment/assignment1)
 

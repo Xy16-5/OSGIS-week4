@@ -3,10 +3,14 @@
 #### Part 1: Plotting with external data (ajax calls)
 
 In [part1-ajax-calls.js](js/part1-ajax-calls.js), you are asked to grab
-one of three datasets we have provided at [a dataset
-repository](https://github.com/CPLN-692-401/datasets/tree/master/json)
+one of three datasets we have provided via [a dataset
+repository](https://github.com/MUSA611-CPLN692-spring2020/datasets/tree/master/json)
 on the class github account. Simply make an ajax request for the data and
-log the successful result to console.
+log the successful result to console. *Remember to use AJAX!*
+
+Hint: github allows you to view the raw (unstyled) version of any file. Use this
+to find the appropriate URL for AJAX, otherwise you'll grab the HTML document
+which contains the *styled* JSON. This is not what we want!
 
 
 #### Part 2: Application state: storing and removing information
