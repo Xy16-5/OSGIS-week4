@@ -27,11 +27,11 @@
 ## Homework Assignment
 - Complete [Week 4 Lab 1 and 2](lab/) (lab 2, part 3 is a stretch goal)
 - Complete selected [Code Academy HTML](https://www.codecademy.com/learn/learn-html) sections
-  1. Elements and Structure
-  4. Semantic HTML
+  - (section 1) Elements and Structure
+  - (section 4) Semantic HTML
 - Complete selected [Code Academy CSS](https://www.codecademy.com/learn/learn-css) sections
-  1. Learn CSS: Selectors and Visual Rules
-  3. Display and Positioning
-  4. Colors
+  - (section 1) Learn CSS: Selectors and Visual Rules
+  - (section 3) Display and Positioning
+  - (section 4) Colors
 - Complete [Week 4 Assignment](assignment/assignment1)
 
