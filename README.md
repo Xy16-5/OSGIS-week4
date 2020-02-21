@@ -33,5 +33,5 @@
   - (section 1) Learn CSS: Selectors and Visual Rules
   - (section 3) Display and Positioning
   - (section 4) Colors
-- Complete [Week 4 Assignment](assignment/assignment1)
+- *CANCELLED* Complete [Week 4 Assignment](assignment/assignment1)
 
