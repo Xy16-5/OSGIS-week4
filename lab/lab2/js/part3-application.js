@@ -1,5 +1,5 @@
 /* =====================
-  Lab 2, part3: a full application (stretch goal)
+  Lab 2, part3: a full application
 
   We're going to use the skills we've just been practicing to write a full application
   which is responsive to user input.

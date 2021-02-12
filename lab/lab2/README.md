@@ -4,8 +4,8 @@
 
 In [part1-ajax-calls.js](js/part1-ajax-calls.js), you are asked to grab
 one of three datasets we have provided via [a dataset
-repository](https://github.com/MUSA611-CPLN692-spring2020/datasets/tree/master/json)
-on the class github account. Simply make an ajax request for the data and
+repository](https://github.com/CPLN692-MUSA611-Open-Source-GIS/datasets/tree/master/json)
+on the class github account. Simply make a request for the data and
 log the successful result to console. *Remember to use AJAX!*
 
 Hint: github allows you to view the raw (unstyled) version of any file. Use this
@@ -16,12 +16,13 @@ which contains the *styled* JSON. This is not what we want!
 #### Part 2: Application state: storing and removing information
 
 In [part2-app-state.js](js/part2-app-state.js), you will be
-tasked with writing a function for creating, adding, and removing
-markers from the map based on data retrieved from the internet. This
-task will require that you keep track of the markers somehow: look to
-the bottom of the file
+tasked with writing a function for creating, adding, and removing (or
+resetting) markers from the map based on data retrieved from the internet.
+This task will require that you keep track of the markers somehow.
 
-#### Part 3: Full application with user input (stretch goal)
+Hint: look to the bottom of the file to see how these functions are used
+
+#### Part 3: Full application with user input
 
 In [part3-application.js](js/part3-application.js), you will use
 what you've learned thus far in the course to write a full application

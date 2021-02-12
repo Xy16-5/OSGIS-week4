@@ -121,14 +121,12 @@ var query7;
 console.log('Grouped by type:', query7);
 
 /* =====================
-Stretch Goal:
+Grouping by type (query7) changed the structure/shape of our data. Instead of an
+array of objects (e.g. [{}, {}]), we have an object that contains arrays of objects
+(e.g. {'key1': [{}, {}], 'key2': [{}, {}]}). Let's do something with this structure.
 
-Grouping by type (query7) changed the structure of our data. Instead of an array of
-objects (e.g. [{}, {}]), we have an object that contains arrays of objects
-(e.g. {'key1': [{}, {}], 'key2': [{}, {}]}). Let's do something this structure.
-
-Write a printMenu2 function to receive the new structure (query7) and print
-(console.log) a menu with headings. Running printMenu(query7) should log:
+Write a printMenuGroups function to receive the new structure (query7) and print
+(console.log) a menu with headings. Running printMenuGroups(query7) should log:
 
 Cake
 Carrot ... $3.49
@@ -141,21 +139,18 @@ Whole Wheat ... $4.49
 
 ===================== */
 
-// printMenu2(query7);
+// printMenuGroups(query7);
 
 /* =====================
-Stretch Goal (seriously, this is a bit tough at first!):
-
-We're writing each line of the menu with the code `food.name + " ... $" + food.price`.
+We're probably writing each line of the menu with the code `food.name + " ... $" + food.price`.
 While this method technically works, it will become less manageable when the
 content becomes more complicated (this can happen as the number of strings and variables
 increases). Underscore has a 'templating' system that can be used to clean up this
 rendering process.
 
-Use _.template to render the price lines of the menu (Carrot ... $3.49).
-
-Hint: Pay close attention to the example provided in documentation. Copy and paste
-it so that you can try it out for yourself. Once you think youunderstand how it
-works, give it a try.
+Use _.template or javascript built-in templating (javascript template strings - google it)
+to render the price lines of the menu (Carrot ... $3.49). Templates are powerful and allow
+you to write much clearer code with text substitution. Consider all the places and ways
+strings come up - templates make the introduction of variability simpler.
 
 ===================== */

@@ -25,13 +25,5 @@
 - [Lab 2](lab/lab2/): First steps with jQuery
 
 ## Homework Assignment
-- Complete [Week 4 Lab 1 and 2](lab/) (lab 2, part 3 is a stretch goal)
-- Complete selected [Code Academy HTML](https://www.codecademy.com/learn/learn-html) sections
-  - (section 1) Elements and Structure
-  - (section 4) Semantic HTML
-- Complete selected [Code Academy CSS](https://www.codecademy.com/learn/learn-css) sections
-  - (section 1) Learn CSS: Selectors and Visual Rules
-  - (section 3) Display and Positioning
-  - (section 4) Colors
-- *CANCELLED* Complete [Week 4 Assignment](assignment/assignment1)
+- Complete [Week 4 Labs 1 and 2](lab/)
 

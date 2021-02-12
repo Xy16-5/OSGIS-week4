@@ -1,45 +1,19 @@
 // =====================================================
-// Performant, recursive fun with underscore.js
-// =====================================================
-
-// The fibonnacci sequence (SLOW)
-var fib = function(n) {
-  if (n < 2) {
-    return n;
-  } else {
-    return fib(n - 1) + fib(n - 2);
-  }
-}
-
-// The fibonnacci sequence (memoized means it saves results!)
-var fibonacci = _.memoize(function(n) {
-  if (n < 2) {
-    return n;
-  } else {
-    return fibonacci(n - 1) + fibonacci(n - 2);
-  }
-});
-
-
-// =====================================================
 // Examples of programming with/in time
 // =====================================================
 
 // This function will run the provided operation on the provided
 //  argument after the provided delay.
-var runAfter = function(run, runArg, runDelay, delayFunc) {
+var runAfter = function(runArg, runDelay, delayFunc) {
   delayFunc = delayFunc || function(x) { return x * 1000; };
   // This 'Deferred' thing is exactly what ajax calls use!
   var d = $.Deferred();
   d.promise()
-    .done(function(a) { // A callback function
-      console.log("Running provided function after", delayFunc(runDelay) / 1000, "seconds");
-      run(a);
-    });
     // apply the provided function after a specified number of milliseconds
     setTimeout(function() {
       d.resolve(runArg);
     }, delayFunc(runDelay) );
+  return d
 };
 
 // We will use this make integers into seconds for delayFunc above
@@ -64,7 +38,8 @@ var addOneToCounter = function(currentCount) {
 addCounter.text(count); // Set initial value
 addButton.click(function() {
   var oldCount = parseInt(addCounter.text(), 10);
-  runAfter(addOneToCounter, oldCount, delay, delayFunc);
+  runAfter(oldCount, delay, delayFunc)
+    .done(function(a) { // A callback function
+      addOneToCounter(a)
+    });
 });
-
-
