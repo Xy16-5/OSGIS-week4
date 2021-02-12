@@ -69,15 +69,6 @@ var plotMarkers = function() {};
 var removeMarkers = function() {};
 
 /* =====================
-  Optional, stretch goal
-  Write the necessary code (however you can) to plot a filtered down version of
-  the downloaded and parsed data.
-
-  Note: You can add or remove from the code at the bottom of this file
-  for the stretch goal.
-===================== */
-
-/* =====================
  Leaflet setup - feel free to ignore this
 ===================== */
 

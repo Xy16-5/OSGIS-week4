@@ -8,6 +8,10 @@ repository](https://github.com/CPLN692-MUSA611-Open-Source-GIS/datasets/tree/mas
 on the class github account. Simply make a request for the data and
 log the successful result to console. *Remember to use AJAX!*
 
+Once you see the data and have managed to log it via console, use that data along
+with your knowledge of Leaflet to plot markers corresponding to all entries you've
+downloaded.
+
 Hint: github allows you to view the raw (unstyled) version of any file. Use this
 to find the appropriate URL for AJAX, otherwise you'll grab the HTML document
 which contains the *styled* JSON. This is not what we want!
