@@ -9,3 +9,17 @@ var Stamen_TonerLite = L.tileLayer('http://stamen-tiles-{s}.a.ssl.fastly.net/ton
   maxZoom: 20,
   ext: 'png'
 }).addTo(map);
+
+// Request the data
+
+var bike_crashes = $.ajax('https://raw.githubusercontent.com/CPLN692-MUSA611-Open-Source-GIS/datasets/master/json/philadelphia-bike-crashes-snippet.json')
+console.log(bike_crashes)
+bike_crashes.done((res)=>{console.log(res)})
+
+// Add Markers
+var bike_obj = JSON.parse(bike_crashes)
+
+for (i=0;i<bike_crashes.length;i++){
+  L.marker([bike_obj[i].LAT, bike_obj[i].LNG]).addTo(map)
+}
+
