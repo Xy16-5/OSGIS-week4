@@ -141,9 +141,21 @@ Rye ... $5.09
 Whole Wheat ... $4.49
 
 ===================== */
-var query7 = _.template()
 
-// printMenuGroups(query7);
+
+
+var printMenuGroups =function(query){
+  for (key in query){
+    console.log(key);
+    for (i=0;i<query[key].length;i++){
+      var menucontent=_.map(query[key], _.template("<% print(name + ' ... ' + price); %>"))
+      console.log(menucontent[i])
+    }
+   
+  }
+}
+
+printMenuGroups(query7);
 
 /* =====================
 We're probably writing each line of the menu with the code `food.name + " ... $" + food.price`.
