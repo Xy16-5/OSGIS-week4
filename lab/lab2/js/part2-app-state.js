@@ -37,15 +37,24 @@ var downloadData = $.ajax("https://raw.githubusercontent.com/CPLN692-MUSA611-Ope
 
 // Write a function to prepare your data (clean it up, organize it
 // as you like, create fields, etc)
-var parseData = function() {};
+var parseData = function(data) {
+  JSON.parse(data)
+
+};
 
 // Write a function to use your parsed data to create a bunch of
 // marker objects (don't plot them!)
-var makeMarkers = function() {};
+var makeMarkers = function(data) {
+  data.forEach((data)=>L.marker([data.LAT,data.LNG]))
+  };
+  
 
 // Now we need a function that takes this collection of markers
 // and puts them on the map
-var plotMarkers = function() {};
+var plotMarkers = function(data) {
+  
+  
+};
 
 // At this point you should see a bunch of markers on your map if
 // things went well.
