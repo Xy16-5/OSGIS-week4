@@ -33,28 +33,38 @@
 ===================== */
 
 // Use the data source URL from lab 1 in this 'ajax' function:
-var downloadData = $.ajax("https://raw.githubusercontent.com/CPLN692-MUSA611-Open-Source-GIS/datasets/master/json/philadelphia-bike-crashes-snippet.json");
+var downloadData = $.ajax("https://raw.githubusercontent.com/CPLN692-MUSA611-Open-Source-GIS/datasets/master/json/world-country-capitals.json");
 
 // Write a function to prepare your data (clean it up, organize it
 // as you like, create fields, etc)
 var parseData = function(data) {
-  JSON.parse(data)
-
+  let capitals = JSON.parse(data);
+    return capitals
 };
+
+
+
 
 // Write a function to use your parsed data to create a bunch of
 // marker objects (don't plot them!)
 var makeMarkers = function(data) {
-  data.forEach((data)=>L.marker([data.LAT,data.LNG]))
+  return _.map(data,function(entries){
+    return L.marker([entries.CapitalLatitude,entries.CapitalLongitude])
+  })
   };
+
+
   
 
 // Now we need a function that takes this collection of markers
 // and puts them on the map
 var plotMarkers = function(data) {
-  
-  
+  _.each(data,function(entries){
+    entries.addTo(map)
+  })  
 };
+
+
 
 // At this point you should see a bunch of markers on your map if
 // things went well.

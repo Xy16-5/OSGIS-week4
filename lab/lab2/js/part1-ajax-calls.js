@@ -13,11 +13,11 @@ var Stamen_TonerLite = L.tileLayer('http://stamen-tiles-{s}.a.ssl.fastly.net/ton
 
 
 
-$.ajax('https://raw.githubusercontent.com/CPLN692-MUSA611-Open-Source-GIS/datasets/master/json/philadelphia-bike-crashes-snippet.json'
+$.ajax('https://raw.githubusercontent.com/CPLN692-MUSA611-Open-Source-GIS/datasets/master/json/world-country-capitals.json'
 ).done((res) => {
-  let bike_crashes = JSON.parse(res)
-  console.log(bike_crashes);
-  bike_crashes.forEach((bike_crashes)=> L.marker([bike_crashes.LAT,bike_crashes.LNG]).addTo(map))
+  let capitals = JSON.parse(res)
+  console.log(capitals);
+  capitals.forEach((capitals)=> L.marker([capitals.CapitalLatitude,capitals.CapitalLongitude]).addTo(map))
   
   }
 );
