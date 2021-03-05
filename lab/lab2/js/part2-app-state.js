@@ -85,7 +85,11 @@ var plotMarkers = function(data) {
 
 // Look to the bottom of this file and try to reason about what this
 // function should look like
-var removeMarkers = function() {};
+var removeMarkers = function(data) {
+  _.each(data,function(entries){
+    map.removeLayer(entries)
+  })
+};
 
 /* =====================
  Leaflet setup - feel free to ignore this
